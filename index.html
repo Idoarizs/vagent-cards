@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/icon.png" />
+    <title>Valorant - Agent Cards</title>
+  </head>
+
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    * {
+      padding: 0;
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      background-color: black;
+    }
+
+    .pembungkus {
+      padding: 25px;
+      max-width: 1200px;
+      margin: auto;
+      color: white;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .pembungkus .header h1 {
+      font-size: 100px;
+    }
+
+    .pembungkus .header p {
+      width: 80%;
+    }
+
+    .pembungkus .header h1 span {
+      font-size: small;
+    }
+
+    /* Komponen Kartu Agent */
+    .kartu {
+      display: flex;
+      gap: 25px;
+    }
+
+    .kartu-agent {
+      position: relative;
+      margin-top: 50px;
+
+      width: 340px;
+
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      border-radius: 15px;
+
+      overflow: hidden;
+
+      background-color: rgb(14, 14, 14);
+
+      border-color: rgb(14, 14, 14);
+      border-style: solid;
+      border-width: 0px;
+
+      transition: all 500ms ease-in-out;
+    }
+
+    .kartu-agent h1 {
+      position: absolute;
+      font-size: 30px;
+      opacity: 0;
+      top: 50px;
+      left: 20px;
+      transition: all 500ms cubic-bezier(0.76, -0.4, 0.35, 1.39);
+    }
+
+    .kartu-agent .deskripsi {
+      display: flex;
+      flex-direction: column;
+      padding: 0px 25px 25px 25px;
+    }
+
+    .kartu-agent p {
+      font-size: small;
+    }
+
+    .kartu-agent img {
+      width: 350px;
+      height: 200px;
+      object-fit: cover;
+      transition: all 500ms ease-in-out;
+    }
+
+    .kartu-agent:hover {
+      border-color: rgb(97, 96, 96);
+      border-style: solid;
+      border-width: 1px;
+      transform: translateY(-10px);
+    }
+
+    .kartu-agent:hover h1 {
+      position: absolute;
+      font-size: 30px;
+      opacity: 1;
+      top: 25px;
+      left: 20px;
+    }
+
+    .kartu-agent:hover img {
+      filter: grayscale() blur(5px);
+    }
+
+  </style>
+
+  <body>
+    <div class="pembungkus">
+      <div class="header">
+        <h1>VAGENT CARDS <span>by Aodi Rizky Saputra</span></h1>
+        <p>
+          Siap untuk menguasai setiap agen dalam game Valorant? Temukan rahasia
+          kekuatan dan strategi terbaik untuk setiap karakter dalam permainan.
+          Jelajahi dunia Valorant dan kembangkan kemampuanmu sebagai pemain yang
+          tangguh! Ayo, mulailah petualanganmu sekarang
+        </p>
+      </div>
+
+      <!-- Kartu Agen Kolom ke-1 -->
+      <div class="kartu">
+        <div class="kartu-agent">
+          <img src="assets/agent-killjoy.jpg" />
+          <h1>Agent KillJoy</h1>
+
+          <div class="deskripsi">
+            <p>
+              Killjoy adalah agen Sentinel yang mengandalkan perangkat canggih
+              untuk mengontrol area. Dengan kemampuan memasang turret dan
+              perangkap yang menghalangi gerakan musuh, Killjoy dapat membuat
+              pertahanan yang kuat. Ia juga memiliki kemampuan untuk
+              menghentikan serangan musuh dengan menggunakan ultimatenya.
+            </p>
+          </div>
+        </div>
+        <div class="kartu-agent">
+          <img src="assets/agent-sage.jpg" />
+          <h1>Agent Sage</h1>
+
+          <div class="deskripsi">
+            <p>
+              Sage adalah agen Sentinel yang memiliki kemampuan menyembuhkan dan
+              melindungi timnya. Dengan kemampuan memulihkan kesehatan dan
+              membangun dinding es, Sage dapat memberikan dukungan vital dalam
+              pertempuran. Ia juga mampu memperlambat gerakan musuh dengan
+              kemampuan kristalnya.
+            </p>
+          </div>
+        </div>
+        <div class="kartu-agent">
+          <img src="assets/agent-jett.png" />
+          <h1>Agent Jett</h1>
+
+          <div class="deskripsi">
+            <p>
+              Sebagai agen Duelist yang lincah, Jett memiliki kemampuan
+              mobilitas tinggi dan senjata yang efektif dalam jarak dekat. Ia
+              dapat melakukan dash untuk menghindari serangan musuh dan
+              menggunakan kemampuan angin untuk memanipulasi arah tembakan. Jett
+              efektif dalam mengintai dan mengganggu lawan.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kartu Agen Kolom ke-2-->
+      <div class="kartu">
+        <div class="kartu-agent">
+          <img src="assets/agent-sova.jpg" />
+          <h1>Agent Sova</h1>
+
+          <div class="deskripsi">
+            <p>
+              Sebagai agen Initiator yang ahli dalam pengintaian, Sova
+              menggunakan panah pengintai dan drone untuk mengumpulkan informasi
+              tentang posisi musuh. Dengan kemampuan deteksi dan serangan yang
+              presisi, Sova dapat membantu timnya untuk mengetahui gerakan musuh
+              dan menyerang dengan efektif.
+            </p>
+          </div>
+        </div>
+        <div class="kartu-agent">
+          <img src="assets/agent-cypher.jpg" />
+          <h1>Agent Cypher</h1>
+
+          <div class="deskripsi">
+            <p>
+              Sebagai agen sentinel, Cypher menggunakan perangkap dan peralatan
+              pengawasan untuk mengontrol area. Ia dapat memasang perangkap
+              kabel dan kamera pengintai untuk mendeteksi dan menahan musuh.
+              Kemampuan utamanya adalah memantau pergerakan lawan dan memberikan
+              informasi penting kepada timnya.
+            </p>
+          </div>
+        </div>
+        <div class="kartu-agent">
+          <img src="assets/agent-omen.png" />
+          <h1>Agent Omen</h1>
+
+          <div class="deskripsi">
+            <p>
+              Omen adalah agen Kontroller yang menguasai bayangan dan kegelapan.
+              Dengan kemampuan untuk teleportasi dan memblokir pandangan musuh,
+              Omen dapat menciptakan kekacauan di medan pertempuran. Ia juga
+              dapat memberikan informasi penting kepada timnya dengan
+              menggunakan kemampuan perintah gelapnya.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
