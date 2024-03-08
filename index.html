@@ -114,6 +114,40 @@
       filter: grayscale() blur(5px);
     }
 
+    /* Responsive Web Design */
+    /* Mobile - 480px */
+    @media screen and (max-width: 720px) {
+      .pembungkus {
+        margin: 25px 15px 25px 15px;
+      }
+
+      .pembungkus .header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+      }
+
+      .pembungkus .header h1 {
+        display: flex;
+        flex-direction: column;
+        font-size: 5rem;
+      }
+
+      .pembungkus .header p {
+        font-size: x-small;
+        margin: auto;
+        max-width: 480px;
+        width: auto;
+      }
+
+      .pembungkus .kartu {
+        display: flex;
+        gap: 0px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
   </style>
 
   <body>
